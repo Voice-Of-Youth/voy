@@ -1,0 +1,53 @@
+.form-wrapper {
+    width: 60%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.form-left-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-right: 2px solid gray;
+}
+
+.form-right-inputs {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form-link-icons {
+    color: black;
+}
+
+.flexed {
+    display: flex;
+    gap: 15px;
+}
+
+.form-content-container {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-links-wrapper {
+    margin-top: 10px;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}

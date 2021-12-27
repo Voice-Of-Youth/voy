@@ -3,88 +3,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/contact-us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Contact us | Voice of Youth</title>
 </head>
 <body>
     <header>
-        <nav>
-          <div>
-            <div>
-              <a href="../../index.html">Voice of the Youth</a>
-              <a href="./resources//view/articles.html">Articles</a>
-              <!-- This Button will appear when it minimizes to smaller device width's -->
-              <button hidden 
-                  type="button">
-                  <img src="./resources/assets/images/bars.png" alt="Three bars">
-              </button>
-  
+      <nav class="nav-container">
+        <div class="nav-wrapper">
+          <div class="logo-container">
+            <a href="../../index.html" class="logo">
+              Voice of the Youth
+            </a>
+    
+            <!-- Mobile view Bars Button -->
+            <button class="bars"
+                type="button">
+                <i class="fas fa-bars"></i>
+            </button>
             </div>
-            <div>
-              <ul>
-                <li><button><img src="./search.png" alt="search"></button></li>
-                <li><button><img src="./notification.png" alt="notification icon"></button></li>
-                <li><a href="./resources/view/sign-up.html">Sign Up</a></li>
-              </ul>
-            </div>
-          </div>    
-        </nav>
-      </header>
+    
+          <ul class="nav-link-wrapper">
+            <li><a href="./src/view/contact-us.html">Contact Us</a></li>
+            <li><a href="./src/view/auth.html">Sign UP</a></li>
+          </ul>
+        </div>		
+      </nav>    
+    </header>
 
-      <hr>
-
-    <div>
-        <div>
-            <div>
-                <div>
+    <div class="form-content-container">
+        <div class="form-container">
+            <div class="form-wrapper">
+                <div class="form-left-info">
                     <h3>Let's Get in touch</h3>
                     <p>Want to get in touch? I would love to hear from you. you can contact me through the information provided or send me an Email through the form.</p>
                     <div>
-                        <div>
-                           <img src="../assets/images/envelop.png" alt="envelop image">
+                        <div class="flexed">
+                          <i class="fa-solid fa-envelope"></i>
                             <p>contact.nathnael.mekonnen@gmail.com</p>
                         </div>
-                        <div>
-                            <img src="../assets/images/phone.png" alt="phone logo">
+                        <div class="flexed">
+                          <i class="fa-solid fa-phone"></i>
                             <p>+251 93-161-2090</p>
                         </div>
-                        <div>
-                            <img src="../assets/images/location.png" alt="Location image">
+                        <div class="flexed">
+                          <i class="fa-solid fa-location-dot"></i>
                             <p>Gelan Condominium, Akaki Kality, A.A</p>
                         </div>
                     </div>
                     <div>
                         <p>My Social Media: </p>
-                        <div>
+                        <div class="form-links-wrapper">
                             <a href="//www.facebook.com">
-                                <img src="../assets/images/facebook.png" alt="Facebook Logo">
+                              <i class="form-link-icons fa-brands fa-facebook"></i>
                             </a>
                             <a href="//www.twitter.com">
-                                <img src="../assets/images/twitter.png" alt="twitter Logo">
+                              <i class="form-link-icons fa-brands fa-twitter"></i>
                             </a>
                             <a href="//www.instagram.com">
-                                <img src="../assets/images/instagram.png" alt="instagram Logo">
+                              <i class="form-link-icons fa-brands fa-instagram"></i>				  
                             </a>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <form action="index.html">
+                <div class="form-right-inputs">
+                    <form action="main.js">
                         <h3>Contact Me</h3>
                         <div>
-                            <input type="text" name="fullname">
-                            <label for="">Full Name</label>
+                            <input" id="full-name" type="text" name="fullname">
+                            <label for="full-name">Full Name</label>
                         </div>
                         <div>
-                            <input type="email" name="email">
-                            <label for="">Email</label>
+                            <input id="email" type="email" name="email">
+                            <label for="email">Email</label>
                         </div>
                         <div>
-                            <input type="tel" name="phone">
-                            <label for="">Phone</label>
+                            <input id="phone" type="tel" name="phone">
+                            <label for="phone">Phone</label>
                         </div>
                         <div>
-                            <textarea name="message"></textarea>
-                            <label for="">Message</label>
+                            <textarea id="message" name="message"></textarea>
+                            <label for="message">Message</label>
                         </div>
 
                         <input type="submit" value="Send">
@@ -94,70 +96,125 @@
         </div>
     </div>
 
-    <hr>
-    
-    <footer>
-        <div>
-          <div>
-            <h4>
-              Let's keep in touch!
-            </h4>
-            <h6 >
-              Cameroon St, Morning Star Mall, Addis Ababa.
-            </h6>
-            <h6>+251 911 002352</h6>
-            <h5>Find us on any of these platforms.</h5>
-            
-            <div>
-              <button type='button'>                
-                <a href='https://twitter.com' rel='noreferrer' target='_blank'>          
-                  <img src="twitter.png">
-                </a>
-              </button>
-              <button type='button'>
-                <a href='https://www.facebook.com' rel='noreferrer' target='_blank'>          
-                  <img src="facebook.png" >
-                </a>
-              </button>
-              <button type='button'>
-                <a href='https://www.instagram.com' rel='noreferrer' target='_blank'>         
-                  <img src="instagram.png">
-                </a>
-              </button>
-            </div>
-          </div>
+    <footer class="footer">
+      <div class="svg-container">
+        <svg class="svg"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        version="1.1"
+        viewBox="0 0 2560 100"
+        x="0"
+        y="0"
+        >
+        <polygon
+          class="polygon"
+          points="2560 0 2560 100 0 100"
+        ></polygon>
+        </svg>
+      </div>
   
-          <div>
-            <span>Our Company</span>
-            <ul>
-               <li>
-                <a href='./about.html'>About Us</a>
-              </li>
-              <li>
-                <a href='./contact-us.html'>Contact Us</a>
-              </li>
-              <li>
-                <a href='./terms-conditions.html'>Terms & Conditions</a>
-              </li>
-              <li>
-                <a href='./privacy.html'>Privacy Policy</a>
-              </li>
+      <div class="contents-container">
+        <div class="contents-wrapper">
+        <div class="info-wrapper">
+          <h4 class="text">
+          Let's keep in touch!
+          </h4>
+          <h6 class="location-text">
+          Cameroon St,  Morning Star Mall  1st Floor, Addis Ababa.
+          </h6>
+          <h6>+251 911 002352</h6>
+          <h5 class="platforms-text">
+          Find us on any of these platforms.
+          </h5>
+          
+          <div class="platforms-container">
+  
+          <!-- The i tags in the anchor tag are font awesome icons tag -->
+  
+          <button class="footer-button" type="button">                
+            <a href="#" rel="noreferrer" target="_blank">					
+            <i class="footer-icon fa-brands fa-twitter"></i>
+            </a>
+          </button>
+          <button class="footer-button" type="button">                
+            <a href="#" rel="noreferrer" target="_blank">					
+            <i class="footer-icon fa-brands fa-facebook"></i>
+            </a>
+          </button>
+          <button class="footer-button" type="button">                
+            <a href="#" rel="noreferrer" target="_blank">					
+            <i class="footer-icon fa-brands fa-instagram"></i>				  
+            </a>
+          </button>
+          </div>
+        </div>
+        <div class="links-container">
+          <div class="links-wrapper">
+    
+          <div class="footer-link-block">
+            <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">
+            Useful Links
+            </span>
+            <ul class="list-unstyled">
+            <li>
+              <a class="footer-link-text"
+                href="www.creative-tim.com/presentation">Home
+              </a>
+            </li>
+            <li>
+              <a class="footer-link-text"
+                href="www.creative-tim.com/presentation">Writers
+              </a>
+            </li>
+            <li>
+              <a class="footer-link-text"
+                href="blog.creative-tim.com">Blog
+              </a>
+            </li>
+    
             </ul>
           </div>
-  
-          <div>
-            <hr>
-            <div>
-              <div>
-                <div align="center">
-                  Voice Of Youth by 
-                  <a href='./group.html'>Group Three</a>.
-                </div>
-              </div>
-            </div>
+    
+          <div class="w-full lg:w-4/12 px-4">
+            <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">
+            Our Company
+            </span>
+            <ul class="list-unstyled">
+            <li>
+              <a class="footer-link-text" href="#">Contact Us</a>
+            </li>
+            <li>
+              <a class="footer-link-text" href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a class="footer-link-text" href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a class="footer-link-text" href="#">About Us</a>
+            </li>
+            </ul>
           </div>
-        </div> 
-      </footer>
-
+          </div>
+        </div>
+        </div>
+  
+        <hr/>
+        <br/>
+  
+        <div class="footer-trademarks">
+        <div class="footer-trademarks-wrapper">
+          <div class="text-sm text-gray-600 font-semibold py-1">
+          Copyright &copy 2021 Voice of Youth by 
+          <a
+            href="www.github.com/Voice-Of-Youth"
+            class="footer-link-text"
+          >
+            Voice of Youth
+          </a>
+          </div>
+        </div>
+        </div>
+      </div>
+      </footer> 
 </body>
 </html>
