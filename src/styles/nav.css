@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-container {
+    padding: .5rem .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;  
+    background-color: #f7fafc;    
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.nav-wrapper {
+    height: 4.5rem;
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    width: 100%;
+}
+
+.logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    white-space: nowrap;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    padding: .5rem 0;
+    display: inline-block;
+    line-height: 1.625;
+    color: #2d3748;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: .25rem;
+    font-size: 1.5rem;
+}
+
+.bars {
+    cursor: pointer;
+    display: block;
+    outline: none;
+    padding: .25rem .75rem;
+    border: solid ;
+    background-color: transparent;
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: .25rem .75rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.bars:focus {
+    outline: none;
+}  
+
+/* Media Queries */
+
+@media (min-width: 640px) {
+    .nav-wrapper {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-wrapper {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-wrapper {
+        max-width:1024px;
+    }
+
+    .logo-container {
+        position: static;
+        width: auto;
+        display: block;
+        justify-content: flex-start;
+    }
+
+    .bars {
+        display: none;
+    }
+}
+
+@media (min-width: 1280px) {
+    .nav-wrapper {
+        max-width:1280px;
+    }
+}
+
