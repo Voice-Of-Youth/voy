@@ -21,7 +21,7 @@
     <a href="https://github.com/Voice-Of-Youth/voy"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://voice-of-youth.github.io/voy/">View Demo Live</a>
+    <a href="https://voice-of-youth.github.io/voy/">View Project Live</a>
     ·
     <a href="https://github.com/Voice-Of-Youth/voy/issues">Report problems and bugs</a>
     ·
