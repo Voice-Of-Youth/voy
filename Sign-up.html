@@ -12,24 +12,28 @@
             font-size: 200%;
             }
 
-     li {
-             list-style-type: none;
-            }
-
-    ol{
+    form{
             line-height: 350%;
           }
 
      .sign {
                      font-size: 300%;
                      font-style: oblique 40deg;
+                     line-height: 150%
+           } 
+      
+      .Alternate {
+                     font-size: 120%;
+                     font-style: oblique 40deg;
+                     line-height: 250%
            } 
 
       input[type=text],
+      input[type=Email],
       input[type=password] {
-            background-color:white;
+            background-color:aliceblue;
             border-radius: 10px;
-            border: bottom;
+            border: none;
             padding-left: 1.5%;
             cursor: pointer;
           }
@@ -74,18 +78,26 @@
     </nav>
 
     <div class="Sign-up" align="center" style="padding: 250px">
-        <ol>
-            <li> <p>Welcome to Voice of the Youth!</p></li>
-               <li><p class="sign">Sign Up</p></li>
-               <form action="/login-page.html" method="post" id="sendemail">
-                <li>
-                <input type="text" pattern="[a-zA-Z]" title="Letters Only" name ="name"  class="text"/ placeholder="First Name" required>
-                </li>
-                <li>
-                <input type="text" maxlength="32" name="password" class="text"/ placeholder="Last Name"  required><br>
+         <p>Welcome to Voice of the Youth!</p></li>
+               <p class="sign">Sign Up</p></li>
+
+               <form action= "action.php" method="post" id="sendemail">
+                <input type="text" pattern="[a-zA-Z]+"  maxlength="16" title="Letters Only" name ="name"  class="text"/ placeholder="First Name" required><br>
+                <input type="text"  pattern="[a-zA-Z]+" maxlength="16" title="Letters Only" name="Last Name" class="text"/ placeholder="Last Name"  required><br>
+                <input type="text" pattern="[a-zA-Z0-9]+" title="Please enter a combination of letters and numbers" name ="name"  class="text"/ placeholder="Username" required><br>
+                <input type="Email" maxlength="32" name="Email" class="text"/ placeholder="Email Address"  required><br>
+                <input type="password" minlength="8" maxlength="32" name="password" class="text"/ placeholder="Password"  required><br>
+                <p class="Alternate"> Already a memeber? <a href="login-page.html">Log-in</a> </p>
+                <input type="image" name="imageField" id="imageField" src="/S.png" width="150" class="send" />
+
+               </form>
+               
+    </div>
+               
+    </div>
     </div>
 
-    <div style="height: 100vh"></div>
+    <div style="height: 40vh"></div>
 
     <footer class="footer">
       <div class="svg-container">
