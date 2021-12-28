@@ -12,9 +12,35 @@
             font-size: 200%;
             }
 
-    li {
+     li {
              list-style-type: none;
             }
+
+    ol{
+            line-height: 350%;
+          }
+
+     .sign {
+                     font-size: 300%;
+                     font-style: oblique 40deg;
+           } 
+
+      input[type=text],
+      input[type=password] {
+            background-color:white;
+            border-radius: 10px;
+            border: bottom;
+            padding-left: 1.5%;
+            cursor: pointer;
+          }
+
+      ::placeholder{
+
+            font-size: 20px;
+            font-style: oblique 40deg;
+            font-weight: 200;
+            padding-left: 5%;
+          }
     </style>
 
     <link rel="stylesheet" type="text/css" href="./src/styles/nav.css" />
@@ -49,8 +75,14 @@
 
     <div class="Sign-up" align="center" style="padding: 250px">
         <ol>
-            <li> <p>Welcome Back!</p></li>
-               <li><p class="suggestion">Sign in to get the most out of Voice-Of-Youth</p></li>
+            <li> <p>Welcome to Voice of the Youth!</p></li>
+               <li><p class="sign">Sign Up</p></li>
+               <form action="/login-page.html" method="post" id="sendemail">
+                <li>
+                <input type="text" pattern="[a-zA-Z]" title="Letters Only" name ="name"  class="text"/ placeholder="First Name" required>
+                </li>
+                <li>
+                <input type="text" maxlength="32" name="password" class="text"/ placeholder="Last Name"  required><br>
     </div>
 
     <div style="height: 100vh"></div>

@@ -15,9 +15,10 @@
         .suggestion {
                      font-size: 100%;
                      font-style: oblique 40deg;
+					 line-height: 350%;
 
         }
-        ol{
+        form{
             line-height: 350%;
         }
         ::placeholder{
@@ -74,18 +75,13 @@
 
   <div></div>
              <div class ="login-part" align = "center" style =padding:250px>
-                 <ol>
-                   <li> <p>Welcome Back!</p></li>
-                      <li><p class="suggestion">Sign in to get the most out of Voice-Of-Youth</p></li>
+                
+                   <p>Welcome Back!</p></li>
+                      <p class="suggestion">Sign in to get the most out of Voice-Of-Youth</p></li>
                         <form action="/index.html" method="post" id="sendemail">
-                            <li>
-                            <input type="text" pattern="[a-zA-Z0-9]+" title="Please enter a combination of letters and numbers" name ="name"  class="text"/ placeholder="Username" required>
-                            </li>
-                            <li>
+                            <input type="text" pattern="[a-zA-Z0-9]+" title="Please enter a combination of letters and numbers" name ="name"  class="text"/ placeholder="Username" required><br>
                             <input type="password" minlength="8" maxlength="32" name="password" class="text"/ placeholder="Password"  required><br>
                             <input type="image" name="imageField" id="imageField" src="/R.png" width="200" class="send" />
-                            </li>
-                        </ol>
                  </form>
              </div>
 
