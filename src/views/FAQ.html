@@ -1,14 +1,15 @@
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="../styles/nav.css">
+	<link rel="stylesheet" type="text/css" href="../styles/footer.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/styles/index.css">
-    <link rel="stylesheet" href="./src/styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>FAQ.html</title>
+    <link rel="stylesheet" type="text/css" href="../styles/FAQ.css">
 </head>
-<body>
-    <nav class="navbar">
+<body >
+	<nav class="navbar">
         <div class="navbar-container">
             <a href="/" class="link" id="navbar-logo">VOY</a>
             
@@ -39,8 +40,38 @@
             </ul>
         </div>
     </nav>
+    
+	<div style=" display: flex; flex-direction: column; align-items: center;">
+	<div style="width: 60%;" >
+		<center>
+			<table>
+				<tr>
+					<img src="../../resources/images/faq_2.svg" width="70%" height="50%" > 
+				</tr>
+			</table>
+		</center>
 
-    <footer class="footer">
+		<div class= "Box">
+			<p class="heading">FAQs</p>
+			<div class="faqs">
+				<details>
+					<summary>What does VoY stand for?</summary>
+					<p class="text"> VoY stands for Voice of Youth</p>
+				</details>
+				<details>
+					<summary>Can i add explicit contents?  </summary>
+					<p class="text"> </p>
+				</details>
+				<details>
+					<summary>How does your filtering system work?</summary>
+					<p class="text"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</details>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<footer class="footer">
         <div class="footer-container">
             <div class="footer-links">
                 <div class="footer-link-wrapper">
@@ -102,9 +133,6 @@
                 </div>
             </section>
         </div>
-    </footer>
-
-    <script src="./src/js/main.js"></script>
-    <script src="./src/js/index.js"></script>
+    </footer> 
 </body>
 </html>
