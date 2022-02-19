@@ -19,11 +19,17 @@
             </div>
             
             <ul class="navbar-menu menu">
-                <li class="navbar-menu-item">
-                    <a href="#" class="navbar-link link">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <span>Search</span>
-                    </a>
+                <li class="search-menu-item">
+                    <div class="navbar-link link search-styling">
+                        <div id="search" class="search-bar">
+                            <input type="text" class="search-text" placeholder="Search...">
+                            <button class="search-submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <div class="search-dropdown" id="hits-container"></div>
+                        </div>
+                        <span id="search-placeholder">Search</span>
+                    </div>
                 </li>
                 <li class="navbar-menu-item">
                     <a href="#" class="navbar-link link">
@@ -32,7 +38,7 @@
                     </a>
                 </li>
                 <li class="navbar-menu-item navbar-btn">
-                    <a href="#" class="btn-link link">
+                    <a href="./src/views/auth.html" class="btn-link link">
                         Sign In
                     </a>
                 </li>
@@ -45,34 +51,29 @@
             <div class="footer-links">
                 <div class="footer-link-wrapper">
                     <div class="footer-link-items">
-                        <h2 class="footer-title">About us</h2>
-                        <a href="#" class="link footer-link">How it Works</a>
-                        <a href="#" class="link footer-link">Testimonials</a>
-                        <a href="#" class="link footer-link">Terms and Services</a>
-                        <a href="#" class="link footer-link">Privacy Policy</a>
+                        <h2 class="footer-title">Help</h2>
+                        <a href="./src/views/FAQ.html" class="link footer-link">FAQ's</a>
+                        <a href="#" class="link footer-link">Report</a>
                     </div>
                     <div class="footer-link-items">
                         <h2 class="footer-title">About us</h2>
-                        <a href="#" class="link footer-link">How it Works</a>
+                        <a href="#" class="link footer-link">Blogs</a>
                         <a href="#" class="link footer-link">Testimonials</a>
-                        <a href="#" class="link footer-link">Terms and Services</a>
-                        <a href="#" class="link footer-link">Privacy Policy</a>
+                        <a href="./src/views/contact-us.html" class="link footer-link">Contact Us</a>
+                        <a href="./src/views/aboutus.html" class="link footer-link">About Us</a>
                     </div>
                 </div>
                 <div class="footer-link-wrapper">
                     <div class="footer-link-items">
-                        <h2 class="footer-title">About us</h2>
-                        <a href="#" class="link footer-link">How it Works</a>
-                        <a href="#" class="link footer-link">Testimonials</a>
-                        <a href="#" class="link footer-link">Terms and Services</a>
-                        <a href="#" class="link footer-link">Privacy Policy</a>
+                        <h2 class="footer-title">Careers</h2>
+                        <a href="./src/views/writers.html" class="link footer-link">Writers</a>
+                        <a href="#" class="link footer-link">How it works</a>
                     </div>
                     <div class="footer-link-items">
-                        <h2 class="footer-title">About us</h2>
-                        <a href="#" class="link footer-link">How it Works</a>
-                        <a href="#" class="link footer-link">Testimonials</a>
-                        <a href="#" class="link footer-link">Terms and Services</a>
-                        <a href="#" class="link footer-link">Privacy Policy</a>
+                        <h2 class="footer-title">Legal</h2>
+                        <a href="#" class="link footer-link">Terms</a>
+                        <a href="#" class="link footer-link">Services</a>
+                        <a href="#" class="link footer-link">Privacy</a>
                     </div>
                 </div>
             </div>
@@ -81,7 +82,7 @@
                     <div class="footer-logo">
                         <a href="/" class="link" id="footer-logo">VOY</a>
                     </div>
-                    <p class="website-rights">&copy; Voice of Youth 2022. All rights reserved</p>
+                    <p class="website-rights">&copy; Voice of Youth <script>document.write(new Date().getFullYear())</script>. All rights reserved</p>
                     <div class="social-icons">
                         <a href="#" class="social-icon-link link" target="_blank">
                             <i class="fa-brands brand fa-facebook"></i>

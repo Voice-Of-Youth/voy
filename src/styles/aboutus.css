@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Encode+Sans+Expanded&family=Open+Sans&display=swap');
+
 /* 
 font-family: 'Bebas Neue', cursive;
 font-family: 'Encode Sans Expanded', sans-serif;
@@ -21,7 +23,11 @@ font-family: 'Open Sans', sans-serif;
     --header-sub: 1.777rem;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif; 
+}
 
+/* Page Styles */
 
 #about-us{
     display: flex;
@@ -30,6 +36,7 @@ font-family: 'Open Sans', sans-serif;
     justify-content: center;
     gap: 10rem;
 }
+
 .about-us-container {
     display: flex;
     flex-direction: column;
@@ -42,7 +49,9 @@ font-family: 'Open Sans', sans-serif;
     margin-top: 3.125rem;
 }
 
-.top {
+/* Hero Section About us */
+
+.about-us-hero {
     height: 100vh;
     display: flex;
     gap: 3rem;
@@ -52,23 +61,26 @@ font-family: 'Open Sans', sans-serif;
     justify-content: center;
 }
 
-.top span {
+.about-us-hero span {
     font-weight: bold;
     letter-spacing: .5rem;
 }
 
-.top h1 span {
-    background-color: rgb(177, 140, 39);
-    color: black;
+.about-us-hero h1 span {
+    background-color: var(--ronchi);
+    color: var(--black);
     height: 2.7rem;
 }
 
-.top h1{
-    color:black;
+.about-us-hero h1{
+    color: var(--black);
+    font-family: 'Bebas Neue', cursive;
     font-size: 6rem;
     font-weight: 800;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
+
 /*the second part style */
 .about-us-wrapper{
     background-color:black;
@@ -106,12 +118,13 @@ font-family: 'Open Sans', sans-serif;
 .sub-container-1{
     display: flex;
     padding:3rem;
-  width:50%;
-  justify-content: center;  
+    width:50%;
+    justify-content: center;  
 }
+
 .image{
- width:auto;
- height: 300px;   
+    width:auto;
+    height: 300px;   
 }
 
 /*The third part container*/
@@ -124,14 +137,13 @@ font-family: 'Open Sans', sans-serif;
     margin-bottom: 2rem;
     margin-top:2rem;
 }
+
 .services{
     padding: 1rem;
     margin-top:center;
 }
 
 .service-image{
-    image-rendering: pixelated;
-    border-image: fill;
     width: 15rem;
     height: 10rem;
     margin-bottom: 1rem;
@@ -145,7 +157,6 @@ font-family: 'Open Sans', sans-serif;
 }
 
 
-/*third section of the page*/
 .img-paragraph{
     height:50vh;
     display: flex;
@@ -153,7 +164,6 @@ font-family: 'Open Sans', sans-serif;
     padding: 0 3.125rem;
     flex-direction: column;
     justify-content:center;
-
 }
 
 .paragraph-container{
@@ -201,5 +211,3 @@ font-family: 'Open Sans', sans-serif;
 .info-container {
     max-width: 80rem;
 }
-
-

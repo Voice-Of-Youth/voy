@@ -1,3 +1,5 @@
+// Hamburger Menu Functionality
+
 const menu = document.querySelector('#mobile-bar-icon')
 const menuLinks = document.querySelector('.navbar-menu')
 
@@ -13,3 +15,4 @@ menuLinks.addEventListener('click', ()=> {
         menuLinks.classList.remove('active')
     }
 })
+
