@@ -20,16 +20,15 @@
             
             <ul class="navbar-menu menu">
                 <li class="search-menu-item">
-                    <div class="navbar-link link search-styling">
+                    <a href="#" class="navbar-link link search-styling">
                         <div id="search" class="search-bar">
                             <input type="text" class="search-text" placeholder="Search...">
                             <button class="search-submit">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
-                            <div class="search-dropdown" id="hits-container"></div>
                         </div>
                         <span id="search-placeholder">Search</span>
-                    </div>
+                    </a>
                 </li>
                 <li class="navbar-menu-item">
                     <a href="#" class="navbar-link link">
@@ -38,44 +37,99 @@
                     </a>
                 </li>
                 <li class="navbar-menu-item navbar-btn">
-                    <a href="./src/views/auth.html" class="btn-link link">
+                    <a href="#" class="btn-link link">
                         Sign In
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
+    
+    <section class="authentication">
+        <div class='sign-in'>
+            <h2 class="title">I already have an Account</h2>
+            <span>Sign in with your email and password</span>
 
-		
+            <form>
+                <small class="error" id="signin-error"></small>
+                <div class="group">
+                    <input placeholder="Email" class="form-input" id="login-email"  type="email" name="email" required label="email">
+                </div>
+                <div class="group">
+                    <input placeholder="Password" class="form-input" id="login-password" type="password" name="password" required label="email">
+                </div>
+                
+                <div class='buttons'>
+                    <button type="submit" class="custom-button" id="signin-button" >Sign In</button>
+                    <button type="submit" class="custom-button google-sign-in" >Sign In with Google</button>
+               </div>
+            </form>
+        </div>
+        <div class='sign-up'>
+            <h2 class='title'>I don't have an Account</h2>
+            <span>Sign up with your email and password</span>
 
-	<footer class="footer">
+            <form>
+                <small class="error" id="signup-error"></small>
+                <div class="group">
+                    <input placeholder="Full Name" class="form-input" id="signup-fname" type="text" name="fullName" required>
+                </div>
+
+                <div class="group">
+                    <input class="form-input" placeholder="User Name" id="signup-dname" type="text" name="displayName" required>
+                </div>
+
+                <div class="group">
+                    <input class="form-input" placeholder="Email" id="signup-email" type="email" name="email" required>
+                </div>
+
+                <div class="group">
+                    <input class="form-input" placeholder="Password" id="signup-password" type="password" name="password" required>
+                </div>
+
+                <div class="group">
+                    <input class="form-input" placeholder="Confirm Password" id="signup-e-password" type="password" name="confirmPassword" required>
+                </div>
+
+                <button type="submit" class="custom-button" id="signup-button">Sign Up</button>
+            </form>
+        </div>
+
+    </section>
+
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-links">
                 <div class="footer-link-wrapper">
                     <div class="footer-link-items">
-                        <h2 class="footer-title">Help</h2>
-                        <a href="./src/views/FAQ.html" class="link footer-link">FAQ's</a>
-                        <a href="#" class="link footer-link">Report</a>
+                        <h2 class="footer-title">About us</h2>
+                        <a href="#" class="link footer-link">How it Works</a>
+                        <a href="#" class="link footer-link">Testimonials</a>
+                        <a href="#" class="link footer-link">Terms and Services</a>
+                        <a href="#" class="link footer-link">Privacy Policy</a>
                     </div>
                     <div class="footer-link-items">
                         <h2 class="footer-title">About us</h2>
-                        <a href="#" class="link footer-link">Blogs</a>
+                        <a href="#" class="link footer-link">How it Works</a>
                         <a href="#" class="link footer-link">Testimonials</a>
-                        <a href="./src/views/contact-us.html" class="link footer-link">Contact Us</a>
-                        <a href="./src/views/aboutus.html" class="link footer-link">About Us</a>
+                        <a href="#" class="link footer-link">Terms and Services</a>
+                        <a href="#" class="link footer-link">Privacy Policy</a>
                     </div>
                 </div>
                 <div class="footer-link-wrapper">
                     <div class="footer-link-items">
-                        <h2 class="footer-title">Careers</h2>
-                        <a href="./src/views/writers.html" class="link footer-link">Writers</a>
-                        <a href="#" class="link footer-link">How it works</a>
+                        <h2 class="footer-title">About us</h2>
+                        <a href="#" class="link footer-link">How it Works</a>
+                        <a href="#" class="link footer-link">Testimonials</a>
+                        <a href="#" class="link footer-link">Terms and Services</a>
+                        <a href="#" class="link footer-link">Privacy Policy</a>
                     </div>
                     <div class="footer-link-items">
-                        <h2 class="footer-title">Legal</h2>
-                        <a href="#" class="link footer-link">Terms</a>
-                        <a href="#" class="link footer-link">Services</a>
-                        <a href="#" class="link footer-link">Privacy</a>
+                        <h2 class="footer-title">About us</h2>
+                        <a href="#" class="link footer-link">How it Works</a>
+                        <a href="#" class="link footer-link">Testimonials</a>
+                        <a href="#" class="link footer-link">Terms and Services</a>
+                        <a href="#" class="link footer-link">Privacy Policy</a>
                     </div>
                 </div>
             </div>
@@ -84,7 +138,7 @@
                     <div class="footer-logo">
                         <a href="/" class="link" id="footer-logo">VOY</a>
                     </div>
-                    <p class="website-rights">&copy; Voice of Youth <script>document.write(new Date().getFullYear())</script>. All rights reserved</p>
+                    <p class="website-rights">&copy; Voice of Youth 2022. All rights reserved</p>
                     <div class="social-icons">
                         <a href="#" class="social-icon-link link" target="_blank">
                             <i class="fa-brands brand fa-facebook"></i>
@@ -106,5 +160,8 @@
             </section>
         </div>
     </footer>
-  </body>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
 </html>
