@@ -170,8 +170,11 @@ body {
 
 .paragraph-container{
     width: 50%;
+   
 }
-
+.paragraph-container:hover{
+    border-style: groove;
+}
 .image-container{
     width: 20rem;
     height: 25rem;
