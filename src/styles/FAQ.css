@@ -82,7 +82,7 @@ body {
 }
 
 .faq.active .answer{
-    max-height: 300px;
+    max-height: 900px;
     animation: fade 1s ease-in-out;
 }
 

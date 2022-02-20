@@ -1,38 +1,38 @@
 const faqArray = [
     {
         id: "faq1",
-        title: "How can i be a writer",
+        title: "How do i create an account?",
         tags: ["writers", "write", "how to"],
         count: 0,
-        answer: "You can be a writer by signing up as a writer and then filling out the forms for verifying who you are, after the verification process you can write on this platform. you'll also get a certificate indicating you are a writer in this platform",
+        answer: "Because of our user-friendly website, creating an account is simple. Simply go to the top right corner of our website and click the sign up button, and our website will walk you through the rest of the procedure.",
     },
     {
         id: "faq2",
-        title: "How can i be a writer",
+        title: "How can i be a writer?",
         tags: ["writers", "write", "how to"],
         count: 0,
         answer: "You can be a writer by signing up as a writer and then filling out the forms for verifying who you are, after the verification process you can write on this platform. you'll also get a certificate indicating you are a writer in this platform",
     },
     {
         id: "faq3",
-        title: "How can i be a writer",
+        title: "Can i write explicit content? ",
         tags: ["writers", "write", "how to"],
         count: 0,
-        answer: "You can be a writer by signing up as a writer and then filling out the forms for verifying who you are, after the verification process you can write on this platform. you'll also get a certificate indicating you are a writer in this platform",
+        answer: "It is advised that you write age-appropriate content, however because we have a filtering system in place, it will automatically filter out unnecessary and offensive language.",
     },
     {
         id: "faq4",
-        title: "How can i be a writer",
+        title: "Can a writer also be a reader?",
         tags: ["writers", "write", "how to"],
         count: 0,
-        answer: "You can be a writer by signing up as a writer and then filling out the forms for verifying who you are, after the verification process you can write on this platform. you'll also get a certificate indicating you are a writer in this platform",
+        answer: "A writer can, of course, be a reader. A writer has all of the same benefits as a reader, but with more. By heading to our writers website, He/she will be given further alternatives to modify/write content. ",
     },
     {
         id: "faq5",
-        title: "How can i be a writer",
+        title: "Does everyone have access to every article? ",
         tags: ["writers", "write", "how to"],
         count: 0,
-        answer: "You can be a writer by signing up as a writer and then filling out the forms for verifying who you are, after the verification process you can write on this platform. you'll also get a certificate indicating you are a writer in this platform",
+        answer: "Our articles are organized by age groups. As a result, an article written for an 18-year-old can only be read by those who are that age or older. The same is true for individuals of all ages.",
     }
 ]
 
