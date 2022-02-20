@@ -2,6 +2,88 @@ const articlesStorage = JSON.parse(sessionStorage.getItem("articles"));
 const userData = JSON.parse(sessionStorage.getItem("database"))
 const loggedInSession = JSON.parse(sessionStorage.getItem("login-session"))
 
+const articlesArray = [
+    {
+        count: 4,
+        id: "art1",
+        writer: "Nahom Temam",
+        href: "../views/articles/article1.html",
+        title: "How to stay confident",
+        date: "Jan 15, 2022",
+        description: "How culture affects sexual education. How culture affects sexual education",
+        blogImage: "https://i2.wp.com/www.dailycal.org/assets/uploads/2019/03/coloredited_ameenagolding_sexeducation_file.jpg?ssl=1",
+        tags: [],
+        content: {
+        }
+    },
+    {
+        count: 9,
+        id: "art2",
+        writer: "Nathnael Shimelis",
+        href: "../views/articles/article2.html",
+        title: "Curture and it's challenges",
+        date: "Feb 2, 2022",
+        description: "How culture affects sexual education. How culture affects sexual education",
+        blogImage: "https://i2.wp.com/www.dailycal.org/assets/uploads/2019/03/coloredited_ameenagolding_sexeducation_file.jpg?ssl=1",
+        tags: [],
+        content: {
+        }
+    },
+    {
+        count: 7,
+        id: "art3",
+        writer: "John Doe",
+        href: "../views/articles/article3.html",
+        title: "How culture affects sexual education",
+        date: "Dec 26, 2021",
+        description: "How culture affects sexual education. How culture affects sexual education",
+        blogImage: "https://i2.wp.com/www.dailycal.org/assets/uploads/2019/03/coloredited_ameenagolding_sexeducation_file.jpg?ssl=1",
+        tags: [],
+        content: {
+        }
+    },
+    {
+        count: 10,
+        id: "art4",
+        writer: "John Doe",
+        href: "../views/articles/article4.html",
+        title: "How culture affects sexual education",
+        date: "Dec 26, 2021",
+        description: "How culture affects sexual education. How culture affects sexual education",
+        blogImage: "https://i2.wp.com/www.dailycal.org/assets/uploads/2019/03/coloredited_ameenagolding_sexeducation_file.jpg?ssl=1",
+        tags: [],
+        content: {
+        }
+    },
+    {
+        count: 10,
+        id: "art5",
+        writer: "John Doe",
+        href: "../views/articles/article5.html",
+        title: "How culture affects sexual education",
+        date: "Dec 26, 2021",
+        description: "How culture affects sexual education. How culture affects sexual education",
+        blogImage: "https://i2.wp.com/www.dailycal.org/assets/uploads/2019/03/coloredited_ameenagolding_sexeducation_file.jpg?ssl=1",
+        tags: [],
+        content: {
+        }
+    },
+    {
+        count: 0,
+        id: "art6",
+        writer: "John Doe",
+        href: "../views/articles/article6.html",
+        title: "How culture affects sexual education",
+        date: "Dec 26, 2021",
+        description: "How culture affects sexual education. How culture affects sexual education",
+        blogImage: "https://i2.wp.com/www.dailycal.org/assets/uploads/2019/03/coloredited_ameenagolding_sexeducation_file.jpg?ssl=1",
+        tags: [],
+        content: {
+        }
+    },
+]
+
+
 console.log(JSON.parse(sessionStorage.getItem("articles")))
 console.log(JSON.parse(sessionStorage.getItem("database")))
 console.log(JSON.parse(sessionStorage.getItem("login-session")))
@@ -31,12 +113,10 @@ if(loggedInSession) {
     }
 }
 
-
-
 // Load dynamically the articles list 
   const articlesCardContainer = document.getElementById('card-lists');
   
-  articlesStorage.forEach((article) => {
+  articlesArray.forEach((article) => {
     const content = `
     <div class="blog-card">
         <div class="blog-card-container">
@@ -46,7 +126,7 @@ if(loggedInSession) {
             <div class="blog-details">
                 <a href="${article.href}" class="link">
                     <h1 class="blog-header">${article.title}</h1>
-                    <p class="blod-description">${article.description}</p>
+                    <p class="blog-description">${article.description}</p>
                 </a>
                 <div class="blog-info">
                     <span class="blog-date">${article.date}</span>

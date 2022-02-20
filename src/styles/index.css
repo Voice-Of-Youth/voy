@@ -446,9 +446,8 @@
     }
 
     .blog-description {
-        font-size: var(--small);
+        font-size: .8rem;
     }
-
 
     .hero-carousel {
         display: none;
@@ -464,9 +463,5 @@
 @media screen and (max-width: 540px) {
     .blog-info {
         display: none;
-    }
-
-    .blog-description {
-        font-size: .5rem;
     }
 }
