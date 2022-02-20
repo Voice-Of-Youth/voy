@@ -170,10 +170,16 @@ body {
 
 .paragraph-container{
     width: 50%;
+    word-spacing:1em;
+    font-weight:300;
+
+
    
 }
 .paragraph-container:hover{
+    border:3px;
     border-style: groove;
+    border-color: rgba(186, 165, 172, 0.5);
 }
 .image-container{
     width: 20rem;
