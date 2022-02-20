@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./src/styles/index.css">
     <link rel="stylesheet" href="./src/styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Voice Of Youth | Read and Write Articles</title>
 </head>
 <body>
     <nav class="navbar">
@@ -39,10 +38,7 @@
                         <span>Favorites</span>
                     </a>
                 </li>
-                <li class="navbar-menu-item navbar-btn">
-                    <a href="./src/views/auth.html" class="btn-link link">
-                        Sign In
-                    </a>
+                <li id="nav-button-dynamic" class="navbar-menu-item navbar-btn">
                 </li>
             </ul>
         </div>
@@ -203,7 +199,7 @@
                                 <h1 class="info-name">John Doe</h1>
                                 <p class="info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit</p> 
                             </div>
-                            <button class="follow-button">follow</button>
+                            <button class="follow-button" onclick="follow(0)">follow</button>
                         </div>
                         <div class="people-wrapper">
                             <div class="user-icon-container">
@@ -213,7 +209,7 @@
                                 <h1 class="info-name">John Doe</h1> 
                                 <p class="info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
-                            <button class="follow-button">follow</button>
+                            <button class="follow-button" onclick="follow(1)">follow</button>
                         </div>
                         <div class="people-wrapper">
                             <div class="user-icon-container">
@@ -223,7 +219,7 @@
                                 <h1 class="info-name">John Doe</h1>
                                 <p class="info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat,</p> 
                             </div>
-                            <button class="follow-button">follow</button>
+                            <button class="follow-button" onclick="follow(2)">follow</button>
                         </div>
                     </div>
                 </div>
@@ -290,7 +286,9 @@
         </div>
     </footer>
 
+    <script src="./src/js/data/data.js"></script>
     <script src="./src/js/main.js"></script>
     <script src="./src/js/index.js"></script>
+    
 </body>
 </html>
