@@ -71,7 +71,6 @@ body {
     color: var(--black);
     height: 2.7rem;
 }
-
 .about-us-hero h1{
     color: var(--black);
     font-family: 'Bebas Neue', cursive;
@@ -93,6 +92,9 @@ body {
     font-size: var(--header-main);
     font-family: serif;
 
+}
+#header:hover{
+    text-decoration:underline;
 }
 
 .container-1{
@@ -180,7 +182,12 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
+img{
+    transition: all 1s;
+}
+img:hover{
+    transform:scale(1.1) ;
+}
 /*The middle part*/
 .middle-section{
     height:50vh;
