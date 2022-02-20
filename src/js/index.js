@@ -10,8 +10,8 @@ const articlesArray = [
         href: "./src/views/articles/article.html",
         title: "How to stay confident",
         date: "Jan 15, 2022",
-        description: "How culture affects sexual education. How culture affects sexual education",
-        blogImage: "https://i2.wp.com/www.dailycal.org/assets/uploads/2019/03/coloredited_ameenagolding_sexeducation_file.jpg?ssl=1",
+        description: "How to build self confidence and stand up for ourselves ",
+        blogImage: "./resources/images/Self_confidence.jpg",
         tags: [],
         content: {
         }
@@ -20,11 +20,11 @@ const articlesArray = [
         count: 9,
         id: "art2",
         writer: "Nathnael Shimelis",
-        href: "./src/views/articles/article.html",
-        title: "Curture and it's challenges",
+        href: "./src/views/articles/article2.html",
+        title: "Culture and it's challenges",
         date: "Feb 2, 2022",
-        description: "How culture affects sexual education. How culture affects sexual education",
-        blogImage: "https://i2.wp.com/www.dailycal.org/assets/uploads/2019/03/coloredited_ameenagolding_sexeducation_file.jpg?ssl=1",
+        description: "How culture affects sexual education.",
+        blogImage: "./resources/images/culture.jpg",
         tags: [],
         content: {
         }
@@ -32,12 +32,12 @@ const articlesArray = [
     {
         count: 7,
         id: "art3",
-        writer: "John Doe",
+        writer: "Nathnael Menelik",
         href: "./src/views/articles/article.html",
-        title: "How culture affects sexual education",
+        title: "Sexual assault and it's causes",
         date: "Dec 26, 2021",
-        description: "How culture affects sexual education. How culture affects sexual education",
-        blogImage: "https://i2.wp.com/www.dailycal.org/assets/uploads/2019/03/coloredited_ameenagolding_sexeducation_file.jpg?ssl=1",
+        description: "What are the main causes of sexual assault and what causes them?",
+        blogImage: "./resources/images/Sexual_assault.jpg",
         tags: [],
         content: {
         }
@@ -45,12 +45,12 @@ const articlesArray = [
     {
         count: 10,
         id: "art4",
-        writer: "John Doe",
-        href: "./src/views/articles/article.html",
-        title: "How culture affects sexual education",
+        writer: "Mahlet Assbu",
+        href: "./src/views/articles/article2.html",
+        title: "Adolescence",
         date: "Dec 26, 2021",
-        description: "How culture affects sexual education. How culture affects sexual education",
-        blogImage: "https://i2.wp.com/www.dailycal.org/assets/uploads/2019/03/coloredited_ameenagolding_sexeducation_file.jpg?ssl=1",
+        description: "The many changes that appear because of adolescence",
+        blogImage: "./resources/images/Adolescence.jpg",
         tags: [],
         content: {
         }
@@ -58,29 +58,16 @@ const articlesArray = [
     {
         count: 10,
         id: "art5",
-        writer: "John Doe",
-        href: "./src/views/articles/article.html",
-        title: "How culture affects sexual education",
+        writer: "Mahlet Tizazu",
+        href: "../views/articles/article5.html",
+        title: "How to prevent sexual assault",
         date: "Dec 26, 2021",
-        description: "How culture affects sexual education. How culture affects sexual education",
-        blogImage: "https://i2.wp.com/www.dailycal.org/assets/uploads/2019/03/coloredited_ameenagolding_sexeducation_file.jpg?ssl=1",
+        description: "The different ways to prevent sexual assault",
+        blogImage: "./resources/images/Sexual_assault_prevent.jpg",
         tags: [],
         content: {
         }
-    },
-    {
-        count: 0,
-        id: "art6",
-        writer: "John Doe",
-        href: "./src/views/articles/article.html",
-        title: "How culture affects sexual education",
-        date: "Dec 26, 2021",
-        description: "How culture affects sexual education. How culture affects sexual education",
-        blogImage: "https://i2.wp.com/www.dailycal.org/assets/uploads/2019/03/coloredited_ameenagolding_sexeducation_file.jpg?ssl=1",
-        tags: [],
-        content: {
-        }
-    },
+    }
 ]
 
 
