@@ -1,4 +1,4 @@
-const faq = [
+const faqArray = [
     {
         id: "faq1",
         title: "How can i be a writer",
@@ -36,30 +36,31 @@ const faq = [
     }
 ]
 
-const FaqContainer = document.getElementById("faq-container");
 
-faq.forEach(faq => {
-    const content = `
-    <div class="faq">
-        <div class="question">
-            <h3>${faq.title}</h3>
+    const FaqContainer = document.getElementById("faq-container");
 
-            <svg width="15" height="10" viewBox="0 0 42 25">
-                <path 
-                d="M3 3L21 21L39 3" 
-                stroke="white" 
-                stroke-width="7" 
-                stroke-linecap="round"
-                />
-            </svg>
-        </div>
-        <div class="answer">
-            <p>${faq.answer}</p>
-        </div>
-    </div>`
+    faqArray.forEach(faq => {
+        const content = `
+        <div class="faq">
+            <div class="question">
+                <h3>${faq.title}</h3>
 
-    FaqContainer.innerHTML += content;
-})
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path 
+                    d="M3 3L21 21L39 3" 
+                    stroke="white" 
+                    stroke-width="7" 
+                    stroke-linecap="round"
+                    />
+                </svg>
+            </div>
+            <div class="answer">
+                <p>${faq.answer}</p>
+            </div>
+        </div>`
+
+        FaqContainer.innerHTML += content;
+    })
 
 const faqs = document.querySelectorAll(".faq");
 

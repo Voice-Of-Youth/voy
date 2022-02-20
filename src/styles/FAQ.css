@@ -37,7 +37,7 @@ body {
     font-family: 'Open Sans', sans-serif; 
 }
 
-section{
+#faq-container{
     min-height: 100vh;
     width: 75%;
     margin: 1rem auto;
