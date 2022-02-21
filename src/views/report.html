@@ -1,0 +1,211 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/auth.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Report</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="/" class="link" id="navbar-logo">VOY</a>
+
+      <div class="navbar-hamburger" id="mobile-bar-icon">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </div>
+
+      <ul class="navbar-menu menu">
+        <li class="search-menu-item">
+          <a href="#" class="navbar-link link search-styling">
+            <div id="search" class="search-bar">
+              <input type="text" class="search-text" placeholder="Search..." />
+              <button class="search-submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <span id="search-placeholder">Search</span>
+          </a>
+        </li>
+        <li class="navbar-menu-item">
+          <a href="#" class="navbar-link link">
+            <i class="fa-solid fa-bookmark"></i>
+            <span>Favorites</span>
+          </a>
+        </li>
+        <li class="navbar-menu-item navbar-btn">
+          <a href="#" class="btn-link link"> Sign In </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="authentication">
+    <div class="sign-in">
+      <h2 class="title">Report A Problem</h2>
+      <span>Feel free to report the problems you encountered while using this
+        website</span>
+
+      <form>
+        <small class="error" id="signin-error"></small>
+        <div class="group">
+          <input placeholder="Email Address" class="form-input" id="login-email" type="text" name="email"
+            label="email" />
+        </div>
+        <div class="group">
+          <input placeholder="Please describe the problem and include any error messages" class="form-textarea"
+            id="login-password" type="text" name="text" label="Report" />
+        </div>
+
+        <div class="buttons">
+          <button type="submit" class="custom-button" id="signin-button">
+            Cancel
+          </button>
+          <button type="submit" class="custom-button google-sign-in">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <!--
+        <h2 class="title">I don't have an Account</h2>
+        <span>Sign up with your email and password</span>
+
+        <form>
+          <small class="error" id="signup-error"></small>
+          <div class="group">
+            <input
+              placeholder="Full Name"
+              class="form-input"
+              id="signup-fname"
+              type="text"
+              name="fullName"
+              required
+            />
+          </div>
+
+          <div class="group">
+            <input
+              class="form-input"
+              placeholder="User Name"
+              id="signup-dname"
+              type="text"
+              name="displayName"
+              required
+            />
+          </div>
+
+          <div class="group">
+            <input
+              class="form-input"
+              placeholder="Email"
+              id="signup-email"
+              type="email"
+              name="email"
+              required
+            />
+          </div>
+
+          <div class="group">
+            <input
+              class="form-input"
+              placeholder="Password"
+              id="signup-password"
+              type="password"
+              name="password"
+              required
+            />
+          </div>
+
+          <div class="group">
+            <input
+              class="form-input"
+              placeholder="Confirm Password"
+              id="signup-e-password"
+              type="password"
+              name="confirmPassword"
+              required
+            />
+          </div>
+
+          <button type="submit" class="custom-button" id="signup-button">
+            Sign Up
+          </button>
+        </form>
+      </div> 
+    -->
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-links">
+            <div class="footer-link-wrapper">
+                <div class="footer-link-items">
+                    <h2 class="footer-title">Help</h2>
+                    <a href="./FAQ.html" class="link footer-link">FAQ's</a>
+                    <a href="./report.html" class="link footer-link">Report</a>
+                </div>
+                <div class="footer-link-items">
+                    <h2 class="footer-title">About us</h2>
+                    <a href="#" class="link footer-link">Blogs</a>
+                    <a href="#" class="link footer-link">Testimonials</a>
+                    <a href="./aboutus.html" class="link footer-link">About Us</a>
+                    
+                </div>
+            </div>
+            <div class="footer-link-wrapper">
+                <div class="footer-link-items">
+                    <h2 class="footer-title">Careers</h2>
+                    <a href="./writers.html" class="link footer-link">Writers</a>
+                    <a href="#" class="link footer-link">How it works</a>
+                    <a href="./contactus.html" class="link footer-link">Contact Us</a>
+                </div>
+                <div class="footer-link-items">
+                    <h2 class="footer-title">Legal</h2>
+                    <a href="#" class="link footer-link">Terms</a>
+                    <a href="#" class="link footer-link">Services</a>
+                    <a href="#" class="link footer-link">Privacy</a>
+                </div>
+            </div>
+        </div>
+        <section class="social-media">
+            <div class="social-media-wrap">
+                <div class="footer-logo">
+                    <a href="../../index.html" class="link" id="footer-logo">VOY</a>
+                </div>
+                <p class="website-rights">&copy; Voice of Youth <script>document.write(new Date().getFullYear())</script>. All rights reserved</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon-link link" target="_blank">
+                        <i class="fa-brands brand fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="social-icon-link link" target="_blank">
+                        <i class="fa-brands brand fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="social-icon-link link" target="_blank">
+                        <i class="fa-brands brand fa-twitter"></i>
+                    </a>
+                    
+                    <a href="#" class="social-icon-link link" target="_blank">
+                        <i class="fa-brands brand fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/auth.js"></script>
+</body>
+
+</html>
